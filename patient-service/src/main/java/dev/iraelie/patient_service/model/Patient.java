@@ -3,10 +3,14 @@ package dev.iraelie.patient_service.model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDate;
 import java.util.UUID;
 
+@Getter
+@Setter
 @Entity
 public class Patient {
     @Id
